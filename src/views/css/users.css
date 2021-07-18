@@ -1,10 +1,19 @@
 .users{
     background-color: white;
-    width: calc(100vw - 12.7vw);
+    width: calc(100vw - 19vw);
     height: calc(100vh - 11h);
     color:black;
     padding-left: 2vw;
     padding-right:2vw;
+}
+.users-header{
+    user-select: none;
+    background-color: rgb(0, 136, 255);
+    color: white;
+    padding-left: 10px;
+}
+.users-header p{
+    padding: 10px;
 }
 .agregar-usuario{
     margin-bottom: 2.5vw;

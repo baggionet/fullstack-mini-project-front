@@ -6,7 +6,9 @@ function Users({history}) {
     return(
         <Fragment>
         <div className="users">
-            <p>Usuarios</p>
+            <div className="users-header">
+                <p>Usuarios</p>
+            </div>
             <div className="agregar-usuario">
                 <button onClick={()=> history.push(routes[2].path)}> {routes[2].name}</button>
             </div>

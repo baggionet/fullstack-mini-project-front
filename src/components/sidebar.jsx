@@ -12,7 +12,7 @@ function Sidebar() {
                 <ul className="sidebar-item">
                     {routes.map((item, idx) => {
                         return(
-                            <li className="sidebar-item-uno"
+                            <li className="sidebar-item-sub"
                                 key={idx} 
                                 onClick={() => history.push(`${item.path}`)}
                                 >

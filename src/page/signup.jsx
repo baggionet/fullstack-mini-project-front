@@ -1,32 +1,29 @@
 import React, { Fragment } from "react";
-import './css/addUser.css';
+import './styles.css';
 
-function AddUser() {
+function Signup({history}) {
     return(
         <Fragment>
-            <div className="add-user">
-                <div className="add-user-header">
-                    <p>Usuario nuevo</p>
-                </div>
-                <div className="add-user-form">
+            <div className="signup">
+                <div className="signup-form">
                     <form className="">
-                        <div className="add-user-form-header">
-                            <label>Formulario</label>
+                        <div className="signup-form-header">
+                            <label>Sign up</label>
                         </div>
-                        <div className="add-user-grup">
+                        <div className="signup-grup">
                             <label>Ingresa tu nombre</label>
                             <input type="text"/>
                         </div>
-                        <div className="add-user-grup">
+                        <div className="signup-grup">
                             <label>Ingresa tu correo</label>
                             <input type="email"/>
                         </div>
-                        <div className="add-user-grup">
+                        <div className="signup-grup">
                             <label>Crea una contraseña</label>
                             <input type="password"/>
                         </div>
-                        <div className="add-user-grup">
-                            <button>Enviar</button>
+                        <div className="signup-grup">
+                            <button onClick={()=> history.push("/admin/home")}>Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -36,4 +33,4 @@ function AddUser() {
 
 }
 
-export default AddUser;
+export default Signup;

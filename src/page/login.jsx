@@ -19,7 +19,7 @@ function Login({history}) {
                     </div>
                     <div className="sesion-grup">
                         <button onClick={()=> history.push("/admin/home")} className="boton" id="boton" type="button">Iniciar sesion</button>
-                        <a onClick={()=> history.push(routes[2].path)} className="crear-cuenta">¿No tienes cuenta? Registrate</a>
+                        <a onClick={()=> history.push("/signup")} className="crear-cuenta">¿No tienes cuenta? Registrate</a>
                     </div>
                 </form>
                 
