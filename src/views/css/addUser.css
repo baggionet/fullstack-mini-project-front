@@ -1,0 +1,8 @@
+.add-user{
+    background-color: white;
+    width: calc(100vw - 12.7vw);
+    height: calc(100vh - 11h);
+    color:black;
+    padding-left: 2vw;
+    padding-right:2vw;
+}

@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    user-select: none;
+    margin-top: 1.5vw;
+    margin-left: 2vw;
+}
+.header-item{
+    display: flex;
+    list-style: none;
+    margin-right: 5vw;
+    font-weight: 900;
+    letter-spacing:2px;
+    user-select: none;
+}
+.header-item-sub{
+    color:white;
+    font-size: 17px;
+    padding-left: 1.5vw;
+    cursor: pointer;
+}

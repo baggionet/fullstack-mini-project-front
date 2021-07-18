@@ -1,0 +1,48 @@
+.login{
+    display: flex;
+    width: 24vw;
+    justify-content: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    margin-top: 5vw;
+    margin-left: 35vw;
+    border-radius: 23px;
+}
+form h2{
+    user-select: none;
+}
+.sesion-grup{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+.sesion-grup label{
+    user-select: none;
+}
+.sesion-grup input{
+    padding: 5px;
+    border-color:white;
+    border-width: 0;
+    background-color: white;
+    border-image:none
+}
+.sesion-grup .boton{
+    color:white;
+    background-color: rgb(14, 14, 141);
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+.crear-cuenta{
+    margin-top: 3vw;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}

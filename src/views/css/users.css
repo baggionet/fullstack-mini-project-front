@@ -1,0 +1,42 @@
+.users{
+    background-color: white;
+    width: calc(100vw - 12.7vw);
+    height: calc(100vh - 11h);
+    color:black;
+    padding-left: 2vw;
+    padding-right:2vw;
+}
+.agregar-usuario{
+    margin-bottom: 2.5vw;
+}
+.agregar-usuario button{
+    padding: 0.5vw 1vw;
+    border-radius: 12px;
+    width: 13vw;
+    color:white;
+    background-color: rgb(0, 136, 255);
+    border:solid 1px rgb(0, 136, 255);
+    cursor: pointer;
+}
+.agregar-usuario button:hover{
+    color:rgb(0, 136, 255);;
+    background-color: white;
+    border:solid 1px rgb(0, 136, 255);
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 1.2vw;
+    text-align: center;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
