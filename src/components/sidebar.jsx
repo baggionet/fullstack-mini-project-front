@@ -11,15 +11,14 @@ function Sidebar() {
             <div className='sidebar'>
                 <ul className="sidebar-item">
                     {routes.map((item, idx) => {
-                        return(
+                        return item.name === "Inicio" ||  item.name === "Usuarios" ?(
                             <li className="sidebar-item-sub"
                                 key={idx} 
                                 onClick={() => history.push(`${item.path}`)}
                                 >
-                                {(prop) => <item.icon {...prop} />}
                                 {item.name}
                             </li>
-                        )
+                        ): null;
                     })
                     }
                 </ul>

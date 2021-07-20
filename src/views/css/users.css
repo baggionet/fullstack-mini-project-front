@@ -5,6 +5,7 @@
     color:black;
     padding-left: 2vw;
     padding-right:2vw;
+    user-select: none;
 }
 .users-header{
     user-select: none;
@@ -44,8 +45,12 @@ td, th {
     padding: 8px;
     font-size: 1.2vw;
     text-align: center;
+    user-select: none;
 }
   
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+.item-icons{
+    cursor: pointer;
 }

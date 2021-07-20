@@ -1,10 +1,9 @@
 import {lazy} from "react";
-import HomeIcon from '@material-ui/icons/Home';
-import PeopleIcon from '@material-ui/icons/People';
 
 const Home = lazy(() => import("../views/home"));
 const Users = lazy(() => import("../views/users"));
 const AddUser = lazy(() => import("../views/addUser"));
+const PutUser = lazy(() => import("../views/putUser"));
 
 
 
@@ -14,21 +13,24 @@ export const routes = [
         path: '/admin/home',
         name:'Inicio',
         exact: true,
-        component: Home,
-        icon: HomeIcon
+        component: Home
     },
     {
         path: '/admin/users',
         name:'Usuarios',
         exact: true,
-        component: Users,
-        icon: PeopleIcon
+        component: Users
     },
     {
         path: '/admin/adduser',
         name:'Agregar Usuario',
         exact: true,
-        component: AddUser,
-        icon: PeopleIcon
+        component: AddUser
+    },
+    {
+        path: '/admin/update',
+        name:'Actualizar Usuario',
+        exact: true,
+        component: PutUser
     }
 ];

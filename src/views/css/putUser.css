@@ -1,0 +1,60 @@
+.put-user{
+    background-color: white;
+    width: calc(100vw - 19vw);
+    height: calc(100vh - 11h);
+    color:black;
+    padding-left: 2vw;
+    padding-right:2vw;
+}
+.put-user-header{
+    user-select: none;
+    background-color: rgb(0, 136, 255);
+    color: white;
+    padding-left: 10px;
+}
+.put-user-header p{
+    padding: 10px;
+}
+.put-user-form{
+    border-right: solid 1px black;
+    width: 30vw;
+    padding-top: 3vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 1vw;
+}
+.put-user-form-header{
+    text-align: center;
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    user-select: none;
+}
+.put-user-grup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5vw;
+}
+.put-user-grup label{
+    font-size: 1.5vw;
+    margin-left: 1vw;
+}
+.put-user-grup input{
+    padding: 0.5vw;
+    border-radius: 10px;
+}
+.put-user-grup button{
+    margin-top: 3vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    width: 20vw;
+    color:white;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+    background-color: rgb(0, 136, 255);
+    border-color: rgb(0, 136, 255);;
+}
+.put-user-grup button:hover{
+    background-color: white;
+    color:rgb(0, 136, 255);
+    font-weight: 900;
+}

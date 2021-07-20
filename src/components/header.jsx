@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import './css/header.css';
 
+
 function Header({history}){
     return(
         <Fragment>
@@ -9,7 +10,7 @@ function Header({history}){
                 <div>
                     <ul className='header-item'>
                         <li className="header-item-sub">Juan</li>
-                        <li onClick={() => history.push("/")} className="header-item-sub"><a>Logout</a></li>
+                        <li onClick={() => history.push("/")} className="header-item-sub">Logout</li>
                     </ul>
                 </div>
             </div>
