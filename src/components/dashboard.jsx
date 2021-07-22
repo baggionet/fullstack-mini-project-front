@@ -3,11 +3,17 @@ import Header from './header';
 import Sidebar from "./sidebar";
 import '../App.css';
 import { routes } from '../utils/routes';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
+
 export const DashboardContext = React.createContext();
 
 function Dashboard({history}) {
     const[openSidebar, setOpenSidebar] = React.useState(true);
+    if(localStorage.length === 0){
+        return(
+            <Redirect to="/"/>
+        )
+    }else{
     return(
         <Fragment>
             <div className="App">
@@ -40,5 +46,6 @@ function Dashboard({history}) {
             </div>
         </Fragment>
     );
+}
 }
 export default Dashboard;

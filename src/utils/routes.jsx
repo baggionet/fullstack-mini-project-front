@@ -4,6 +4,7 @@ const Home = lazy(() => import("../views/home"));
 const Users = lazy(() => import("../views/users"));
 const AddUser = lazy(() => import("../views/addUser"));
 const PutUser = lazy(() => import("../views/putUser"));
+const Details = lazy(() => import("../views/details"));
 
 
 
@@ -32,5 +33,11 @@ export const routes = [
         name:'Actualizar Usuario',
         exact: true,
         component: PutUser
+    },
+    {
+        path: '/admin/details',
+        name:'Detalles de Usuario',
+        exact: true,
+        component: Details
     }
 ];

@@ -53,4 +53,10 @@ tr:nth-child(even) {
 }
 .item-icons{
     cursor: pointer;
+    margin-left: 15px;
+    font-size: 28px;
+}
+.item-icons:hover{
+    color: rgb(0, 136, 255);
+    font-weight: 900;
 }
