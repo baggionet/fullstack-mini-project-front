@@ -11,7 +11,7 @@ function PutUser({ history }) {
    //setId(history.location.state.detail)
    const id = history.location.state.detail;
     //Adquiriendo los datos del usuario seleccionado
-    const baseUrl = 'http://172-31-52-160:3000/api/users/' + id;
+    const baseUrl = 'http://ec2-54-208-27-215.compute-1.amazonaws.com:3000/api/users/' + id;
     const [ data, setData ] = useState([]);
 
     const fetcData = async () =>{
@@ -44,7 +44,7 @@ function PutUser({ history }) {
             console.log(name, email)
             e.preventDefault();
             const response = await axios({
-                url: 'http://172-31-52-160:3000/api/users/' + id, 
+                url: 'http://ec2-54-208-27-215.compute-1.amazonaws.com:3000/api/users/' + id, 
                 method: 'PUT',
                 data: {name, email}
                 });
