@@ -15,7 +15,7 @@ function Signup({history}) {
             e.preventDefault();
             console.log(name, email, password)
             const response = await axios({
-                url: 'http://localhost:4000/api/users', 
+                url: 'http://172-31-52-160:3000/api/users', 
                 method: 'POST',
                 data: {name, email, password}
                 })

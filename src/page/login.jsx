@@ -14,7 +14,7 @@ function Login({history}) {
         try {
             e.preventDefault()
             const data  = await axios({
-                url: 'http://localhost:4000/api/auth/users',
+                url: 'http://172-31-52-160:3000/api/auth/users',
                 method: 'POST',
                 data: {
                     email, password

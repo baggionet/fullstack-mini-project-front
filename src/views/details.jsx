@@ -16,7 +16,7 @@ function Details({history}) {
     console.log(id)
     var created = null;
     var lastUpdate = null;
-    const baseUrl = 'http://localhost:4000/api/users/' + id;
+    const baseUrl = 'http://172-31-52-160:3000/api/users/' + id;
     const [ data, setData ] = useState([]);
 
     const detailData = async () =>{
