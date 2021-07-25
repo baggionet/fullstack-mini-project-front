@@ -23,7 +23,9 @@ function Signup({history}) {
                 console.log(response)
                 history.push("/admin/users", {response});
         }catch (error){
-            alert(error.response.data)
+            if(error){
+                alert(error.response.data)
+                }
         }
     }
 
