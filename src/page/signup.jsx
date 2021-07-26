@@ -15,7 +15,7 @@ function Signup({history}) {
             e.preventDefault();
             console.log(name, email, password)
             const response = await axios({
-                url: 'http://ec2-54-208-27-215.compute-1.amazonaws.com:3000/api/users', 
+                url: 'http://52.86.102.57:3000/api/users', 
                 method: 'POST',
                 data: {name, email, password}
                 })
@@ -24,9 +24,11 @@ function Signup({history}) {
                 history.push("/admin/users", {response});
         }catch (error){
             if(error){
+                console.log(error.response.data)
                 alert(error.response.data)
-                }
+            }
         }
+        
     }
 
 

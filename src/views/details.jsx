@@ -16,7 +16,7 @@ function Details({history}) {
     console.log(id)
     var created = null;
     var lastUpdate = null;
-    const baseUrl = 'http://ec2-54-208-27-215.compute-1.amazonaws.com:3000/api/users/' + id;
+    const baseUrl = 'http://52.86.102.57:3000/api/users/' + id;
     const [ data, setData ] = useState([]);
 
     const detailData = async () =>{

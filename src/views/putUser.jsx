@@ -11,7 +11,7 @@ function PutUser({ history }) {
    //setId(history.location.state.detail)
    const id = history.location.state.detail;
     //Adquiriendo los datos del usuario seleccionado
-    const baseUrl = 'http://ec2-54-208-27-215.compute-1.amazonaws.com:3000/api/users/' + id;
+    const baseUrl = 'http://52.86.102.57:3000/api/users/' + id;
     const [ data, setData ] = useState([]);
 
     const fetcData = async () =>{
@@ -20,7 +20,10 @@ function PutUser({ history }) {
             
             setData(result.data);
         } catch (error) {
-            console.log(error)
+            if(error){
+                console.log(error.response.data)
+                alert(error.response.data)
+            }
         } 
     }  
     
@@ -44,7 +47,7 @@ function PutUser({ history }) {
             console.log(name, email)
             e.preventDefault();
             const response = await axios({
-                url: 'http://ec2-54-208-27-215.compute-1.amazonaws.com:3000/api/users/' + id, 
+                url: 'http://52.86.102.57:3000/api/users/' + id, 
                 method: 'PUT',
                 data: {name, email}
                 });
@@ -56,7 +59,10 @@ function PutUser({ history }) {
                     logOut()
                 }
         }catch (error){
-            alert(error.response.data)
+            if(error){
+                console.log(error.response.data)
+                alert(error.response.data)
+            }
         }
     }
 

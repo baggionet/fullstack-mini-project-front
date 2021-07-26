@@ -14,7 +14,7 @@ function Login({history}) {
         try {
             e.preventDefault()
             const response  = await axios({
-                url: 'http://ec2-54-208-27-215.compute-1.amazonaws.com:3000/api/auth/users',
+                url: 'http://52.86.102.57:3000/api/auth/users',
                 method: 'POST',
                 data: {
                     email, password
@@ -24,6 +24,7 @@ function Login({history}) {
             history.push("/admin/home");
         } catch (error) {
             if(error){
+                console.log(error.response.data)
             alert(error.response.data)
             }
         }
