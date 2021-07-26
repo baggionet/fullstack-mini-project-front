@@ -12,7 +12,7 @@ import { Redirect } from 'react-router-dom';
 
 function Users({history}) {
     //Se realiza solicito a la api para traer todos los usuarios
-    const baseUrl = 'http://52.86.102.57:3000/api/users';
+    const baseUrl = 'http://localhost:3000/api/users';
     const [ data, setData ] = useState([]);
 
     const fetcData = async () =>{
@@ -31,7 +31,7 @@ function Users({history}) {
             alert("No estas autorizado para esta accion")
         }else{
             
-            await axios.delete('http://52.86.102.57:3000/api/users/' + id)
+            await axios.delete('http://localhost:3000/api/users/' + id)
             console.log(id)
             fetcData();
         }

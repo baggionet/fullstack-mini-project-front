@@ -12,7 +12,7 @@ function AddUser({ history }) {
         try{
             e.preventDefault();
             const response = await axios({
-                url: 'http://52.86.102.57:3000/api/users', 
+                url: 'http://localhost:3000/api/users', 
                 method: 'POST',
                 data: {name, email, password}
                 })
